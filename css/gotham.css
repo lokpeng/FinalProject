@@ -1,0 +1,48 @@
+h1{
+
+font-size: 30px
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #909090;
+     font-size: 20px;
+}
+
+
+
+body{
+    font-size: 15px;
+    font-family: fantasy;
+}
+.nav li a:hover{
+}
+#nav li ul {
+
+ left: -999em; width: 105px; position: absolute;background-color: gray;
+}
+
+
+#nav li:hover ul {
+ left: auto;
+}

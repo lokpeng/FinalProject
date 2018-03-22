@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+
+<script>
+
+
+   function login(){
+   var name=document.getElementById("name").value;
+   var pass=document.getElementById("pass").value;
+   if(name=="admin" && pass=="admin"){
+       alert("登入功");
+       window.location.href="gotham.html";
+   return false;
+   }else{
+       alert("用户名或密码错误");
+       window.location.href="index.html";
+   return false;
+     }   
+   }
+
+</script>
+<style>
+	.login{width: 1500px;
+
+ height:48  0px;
+
+  box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  text-align: center;}
+
+  
+</style>
+<body  onload="javascript:window.alert('用户名和密码皆为：admin')">
+    <div id="login" style="text-align: center;">
+    <p><img  width="300" height="400" src="img/1.jpg"/ ></p>
+    <p  class="oneTitle">哥谭 用户登录界面</p>
+    <p class="grayFont">欢迎来到哥谭</p>
+    <form name="f" action="index.html">
+    <p><input type="text" class="textBox" placeholder="请输入用户名" id="name"/></p>
+    <p><input type="password" class="textBox" placeholder="请输密码"id="pass"/></p>
+    <p><input type="submit" value="提交登录"  class="submitButton" onclick="return login();"/></p>
+    </from>
+   
+    </div>
+</body>
+</html>
